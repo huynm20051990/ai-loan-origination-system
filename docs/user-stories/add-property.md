@@ -48,11 +48,6 @@
 - When I click "Save",
 - Then the property should be saved and visible in my property listings.
 
-### AC-5: Edit or remove property
-- Given a property has been added,
-- When I view my property list,
-- Then I should be able to edit or remove the property entry.
-
 ---
 
 ## Out of Scope
