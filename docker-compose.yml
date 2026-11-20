@@ -1,0 +1,17 @@
+networks:
+  default:
+    name: ai-loan-origination-system
+
+services:
+  property-service:
+    build: microservices/property-service
+    image: ai-loan-origination-system/property-service
+    mem_limit: 512m
+    container_name: ai-loan-origination-system-property-service
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CONFIG_LOCATION=file:/config-repo/property-service.yml
+    volumes:
+      - $PWD/config-repo:/config-repo
+
+
