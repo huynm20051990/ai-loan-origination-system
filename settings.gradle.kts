@@ -1,0 +1,1 @@
+include("microservices:property-service")
